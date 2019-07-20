@@ -1,14 +1,14 @@
-package com.ztkmkoo.board.frontend.root;
+package com.ztkmkoo.board.frontend;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@Controller("/")
+@Controller
 public class RootController {
 
     private static final String ROOT = "index";
 
-    @GetMapping(value = "/")
+    @GetMapping(value = "")
     public String root() {
         return ROOT;
     }
