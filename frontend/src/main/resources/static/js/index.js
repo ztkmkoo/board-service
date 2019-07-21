@@ -15,7 +15,6 @@ frontend.index = {
             url: '/board',
             type: 'GET',
             success: function(response) {
-                alert("Success:" + JSON.stringify(response));
                 $( "#main" ).html(response);
             },
             error: function (err) {
